@@ -3,15 +3,19 @@ version: 2.1
 executors:
   renovate:
     docker:
-      - image: renovate/renovate:latest
+      - image: renovate/renovate:slim
 jobs:
   run-renovate:
     executor: renovate
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "run renovate"
+          command: "renovate"
+          environment:
+            RENOVATE_CONFIG_FILE: ./renovate-config.js
+            LOG_LEVEL: "debug"
+            LOG_FORMAT: "json"
 
 workflows:
   renovate-workflow:
