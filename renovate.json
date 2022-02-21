@@ -3,5 +3,17 @@
   "extends": [
     "config:base"
   ],
-  "includePaths": ["modules/sample-a/package.json", "modules/sample-b/package.json"]
+  "labels": ["dependencies"],
+  "additionalBranchPrefix": "{{parentDir}}-",
+  "commitMessagePrefix": "[{{parentDir}}] ",
+  "packageRules": [
+    {
+      "matchPaths": ["modules/sample-v14/package.json"],
+      "addLabels": ["module v14"]
+    },
+    {
+      "matchPaths": ["modules/sample-v16/package.json"],
+      "addLabels": ["module v16"]
+    }
+  ]
 }

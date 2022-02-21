@@ -9,12 +9,13 @@ jobs:
     executor: renovate
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: "run renovate"
           command: "renovate"
           environment:
             RENOVATE_CONFIG_FILE: ./renovate-config.js
-            LOG_LEVEL: "warn"
+            LOG_LEVEL: "info"
             LOG_FORMAT: "json"
 
 workflows:
