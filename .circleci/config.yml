@@ -3,7 +3,7 @@ version: 2.1
 executors:
   renovate:
     docker:
-      - image: renovate/renovate:slim
+      - image: renovate/renovate:latest
 jobs:
   run-renovate:
     executor: renovate
