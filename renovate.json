@@ -4,6 +4,11 @@
     "config:base"
   ],
   "labels": ["dependencies"],
+  "force": {
+    "constraints": {
+      "node": ">= 16.0.0"
+    }
+  },
   "additionalBranchPrefix": "{{parentDir}}-",
   "commitMessagePrefix": "[{{parentDir}}] ",
   "packageRules": [
