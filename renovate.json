@@ -1,5 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "force": {
+    "constraints": {
+      "node": ">= 16.0.0"
+    }
+  },
   "extends": [
     "config:base"
   ],
