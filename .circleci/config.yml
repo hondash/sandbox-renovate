@@ -21,4 +21,7 @@ jobs:
 workflows:
   renovate-workflow:
     jobs:
-      - run-renovate
+      - run-renovate:
+          filters:
+            branches:
+              only: main
