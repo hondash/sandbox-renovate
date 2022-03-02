@@ -3,5 +3,5 @@
   "extends": [
     "config:base"
   ],
-  "includePaths": ["modules/sample-a/package.json", "modules/sample-b/package.json"]
+  "includePaths": ["modules/sample-v16/package.json", "modules/sample-v14/package.json"]
 }

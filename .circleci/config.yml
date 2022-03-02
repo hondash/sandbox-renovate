@@ -9,6 +9,7 @@ jobs:
     executor: renovate
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: "run renovate"
           command: "renovate"
