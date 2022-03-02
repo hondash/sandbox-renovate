@@ -11,5 +11,14 @@
       "node": ">= 16.0.0"
     }
   },
-  "includePaths": ["modules/sample-v16/package.json", "modules/sample-v14/package.json"]
+  "packageRules": [
+    {
+      "matchPaths": ["modules/sample-v14/package.json"],
+      "addLabels": ["module v14"]
+    },
+    {
+      "matchPaths": ["modules/sample-v16/package.json"],
+      "addLabels": ["module v16"]
+    }
+  ]
 }
