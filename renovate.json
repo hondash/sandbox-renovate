@@ -3,5 +3,13 @@
   "extends": [
     "config:base"
   ],
-  "includePaths": ["modules/sample-a/package.json", "modules/sample-b/package.json"]
+  "labels": ["dependencies"],
+  "additionalBranchPrefix": "{{parentDir}}-",
+  "commitMessagePrefix": "[{{parentDir}}] ",
+  "force": {
+    "constraints": {
+      "node": ">= 16.0.0"
+    }
+  },
+  "includePaths": ["modules/sample-v16/package.json", "modules/sample-v14/package.json"]
 }
