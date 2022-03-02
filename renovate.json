@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "labels": ["dependencies"],
   "additionalBranchPrefix": "{{parentDir}}-",
+  "commitMessagePrefix": "[{{parentDir}}] ",
   "force": {
     "constraints": {
       "node": ">= 16.0.0"
